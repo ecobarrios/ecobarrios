@@ -59,7 +59,7 @@ function Header() {
             }
             return (
               <div key={m.key} className="flex flex-col items-center gap-2">
-                <span className="cursor-pointer text-green-600 font-bold hover:text-green-800">
+                <span className="cursor-pointer text-green-600 font-bold hover:text-green-800 active:translate-y-1  transition-all duration-150 ease-in-out">
                   {m.title}
                 </span>
                 <Image
