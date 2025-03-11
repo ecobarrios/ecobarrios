@@ -6,13 +6,13 @@ function BannerAction() {
     <>
       <div className="bg-green-600 h-60 flex items-center">
         <div className="flex flex-col justify-center items-center m-auto w-full gap-2">
-          <h1 className="font-extralight text-7xl">
+          <h1 className="font-extralight text-7xl text-slate-50">
             Convierte tu barrio en{" "}
             <span className="font-extrabold">Ecobarrio</span>
           </h1>
 
           <div className="w-1/2 m-auto flex text-center">
-            <p className="text-3xl font-bold">
+            <p className="text-3xl font-bold text-slate-50">
               ¡Unete al Programa Ecobarrios Santiago y transforma tu comunidad!
             </p>
           </div>

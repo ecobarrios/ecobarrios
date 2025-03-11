@@ -5,7 +5,7 @@ function BannerInformation() {
     <div className="flex justify-center items-center w-full m-auto">
       <div className=" h-auto w-full justify-center flex items-center flex-col">
         <div className="bg-amber-900 w-full h-auto text-center py-5">
-          <h1 className="font-extralight text-7xl">
+          <h1 className="font-extralight text-7xl text-slate-50">
             ¿Que entedemos por Ecobarrio?
           </h1>
         </div>
