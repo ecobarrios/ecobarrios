@@ -9,19 +9,19 @@ function ButtonInscription() {
   const [formInscription, setFormInscription] = useState(false);
   return (
     <>
-      <section className="flex justify-center flex-col items-center gap-2 m-auto mt-10">
+      <section id="inscripcion" className="flex justify-center flex-col items-center gap-2 m-auto mt-3 md:mt-10">
         <button
           onClick={() => setFormInscription(true)}
-          className="text-white py-2 p-5 rounded-full bg-cyan-600 w-5/6 text-5xl font-bold border-2  shadow-md hover:shadow-lg active:shadow-sm active:translate-y-1  transition-all duration-150 ease-in-out"
+          className="text-secondary-cream py-2 p-5 rounded-full bg-primary-sky w-5/6 text-2xl md:text-5xl font-bold border-2  shadow-md hover:shadow-lg active:shadow-sm active:translate-y-1  transition-all duration-150 ease-in-out"
         >
           Inscribete aquí
         </button>
 
-        <div className="h-10 w-full flex justify-center m-auto text-center mb-10">
+        <div className="md:h-10 w-full flex justify-center m-auto text-center md:mb-10">
           <Image
             src={imageBaseButtonInscriptio}
             width={1000}
-            height={100}
+            height={1000}
             alt="base"
           />
         </div>

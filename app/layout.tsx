@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import ScrollToTop from "@/components/shared/ScrollTop";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ecobarrio",
   description: "La semilla del cambio",
+  icons: {
+    icon: "/SVG/icono_eco_barrios.svg",
+  },
 };
 
 export default function RootLayout({
@@ -16,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <ScrollToTop />
+      </body>
     </html>
   );
 }

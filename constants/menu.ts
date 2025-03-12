@@ -2,26 +2,26 @@ export const menuHeader = [
   {
     title: "Inscribete Aquí",
     key: "inscription",
-    url: "/inscripcion",
+    url: "inscripcion",
   },
   {
     title: "Noticias",
     key: "news",
-    url: "/noticias",
+    url: "inscripcion",
   },
   {
     title: "Actividades",
     key: "activities",
-    url: "/actividades",
+    url: "inscripcion",
   },
   {
     title: "Red",
     key: "red",
-    url: "/red",
+    url: "footer",
   },
   {
     title: "Contacto",
     key: "contact",
-    url: "/contacto",
+    url: "footer",
   },
 ];

@@ -6,7 +6,7 @@ export default function HomeLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="bg-slate-50">
+    <div className="bg-secondary-cream">
       <Header />
 
       <main className="min-h-screen">{children}</main>

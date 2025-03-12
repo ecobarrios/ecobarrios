@@ -31,11 +31,21 @@ const config: Config = {
   			},
   			primary: {
   				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
+  				foreground: 'hsl(var(--primary-foreground))',
+				yellow: '#F8AA2B',
+				red:'#EB4606',
+				mora:'#6A4593',
+				green:'#46B000',
+				sky:'#3A9AD5',
+				
   			},
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
-  				foreground: 'hsl(var(--secondary-foreground))'
+  				foreground: 'hsl(var(--secondary-foreground))',
+				green:'#93C353',
+				cream:'#F8EEDF',
+				brown: '#834212',
+				black: '#1C191B'
   			},
   			muted: {
   				DEFAULT: 'hsl(var(--muted))',
