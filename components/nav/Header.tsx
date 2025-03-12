@@ -20,7 +20,7 @@ function Header() {
   const handleClose = () => setOpen(false);
 
   return (
-    <nav className="w-full bg-secondary-cream h-36 flex items-center justify-between md:justify-center gap-10 px-6 fixed shadow-sm z-50">
+    <nav className="w-full bg-secondary-cream h-24 flex items-center justify-between md:justify-center gap-10 px-6 fixed shadow-sm z-50">
       <Link href={"#home"} className="hidden md:block">
         <Image src={logoHeaderSvg} alt="logo" width={300} height={300} className="w-60" />
       </Link>
