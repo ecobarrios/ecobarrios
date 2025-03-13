@@ -1,5 +1,5 @@
 import React from "react";
-import imageHomePresentation from "@/public/PNG/imagen_presentation.png";
+import imageHomePresentation from "@/public/principal.jpg";
 import BackgroundImageComponent from "./components/BackgroundImageComponent";
 
 function ImageHome() {
