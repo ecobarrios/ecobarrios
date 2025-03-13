@@ -6,7 +6,7 @@ function BackgroundImageComponent({ imageUrl }: Props) {
   return (
     <section
       id="home"
-      className="h-[40vh] md:h-screen bg-contain md:bg-cover md:bg-center bg-no-repeat "
+      className="h-[50vh] md:h-screen bg-cover bg-fixed md:bg-cover md:bg-center bg-no-repeat "
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
       {/* Capa con degradado mostaza */}
@@ -27,7 +27,7 @@ function BackgroundImageComponent({ imageUrl }: Props) {
                 barrios más verdes resilientes y unidos.
               </p>
 
-              <p className=" text-secondary-cream text-justify font-light text-sm md:text-[21px]">
+              <p className=" text-white text-justify font-light text-sm md:text-[21px]">
                 Es un llamado a la acción para transformar nuestros espacios en
                 comunidades donde la sostenibilidad y la participación ciudadana
                 sean <span className="font-bold">la semilla del cambio</span>
