@@ -23,7 +23,7 @@ function Footer() {
             Programa Ecobarrio
           </h1>
           {menuHeader.map((c) => (
-            <Link href={`#${c.url}`} className="text-secondary-cream cursor-pointer" key={c.title}>
+            <Link href={`#${c.url}`} className="text-secondary-cream cursor-pointer hover:text-slate-50" key={c.title}>
               {c.title}
             </Link>
           ))}
@@ -32,12 +32,12 @@ function Footer() {
           <h1 className="text-secondary-cream mb-5 text-2xl font-bold">
             Contacto
           </h1>
-          <span className="text-secondary-cream cursor-pointer">
+          <Link href={'https://www.gobiernosantiago.cl/'} className="text-secondary-cream cursor-pointer hover:text-slate-50">
             Gobierno Regional Metropolitano
-          </span>
-          <span className="text-secondary-cream cursor-pointer">
+          </Link>
+          <Link href={"#"} className="text-secondary-cream cursor-pointer hover:text-slate-50">
             Consejo Regional{" "}
-          </span>
+          </Link>
           <h1 className="text-secondary-cream mb-5 text-2xl font-bold mt-5">
             Redes Sociales
           </h1>

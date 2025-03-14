@@ -8,10 +8,10 @@ function BannerActionDos() {
       <Image src={imageBannerActionDos} alt={""} className="w-full" />
 
       <div className="text-primary-mora text-center space-y-4">
-        <p className="text-2xl md:text-6xl font-bold">
+        <p className="text-2xl md:text-5xl font-bold">
           Súmate al Programa Ecobarrios Santiago{" "}
         </p>
-        <p className="text-1xl md:text-3xl">y construyamos juntos un futuro más verde</p>
+        <p className="text-1xl md:text-2xl">y construyamos juntos un futuro más verde</p>
       </div>
     </div>
   );

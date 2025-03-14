@@ -2,9 +2,9 @@ import React from "react";
 
 function BannerInformation() {
   return (
-    <div className="flex justify-center items-center w-full m-auto">
+    <div className="flex justify-center items-center w-full m-auto ">
       <div className=" h-auto w-full justify-center flex items-center flex-col">
-        <div className="bg-secondary-brown w-full h-auto text-center py-5">
+        <div className="bg-secondary-brown w-full h-auto text-center py-5 rounded-xl">
           <h1 className="font-extralight text-2xl md:text-7xl text-secondary-cream">
             ¿Que entedemos por Ecobarrio?
           </h1>

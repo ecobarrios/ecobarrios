@@ -10,10 +10,14 @@ function HomePage() {
   return (
     <div className="min-h-screen">
       <ImageHome />
+
+      <div className="max-w-[1100px] m-auto flex flex-col space-y-5">
+
       <ButtonInscription />
       <BannerAction/>
       <BannerInformation/>
       <BannerActionDos/>
+      </div>
       <Footer/>
     </div>
   );

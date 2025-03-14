@@ -12,7 +12,7 @@ function ButtonInscription() {
       <section id="inscripcion" className="flex justify-center flex-col items-center gap-2 m-auto mt-3 md:mt-10">
         <button
           onClick={() => setFormInscription(true)}
-          className="text-secondary-cream py-2 p-5 rounded-full bg-primary-sky w-5/6 text-2xl md:text-5xl font-bold border-2  shadow-md hover:shadow-lg active:shadow-sm active:translate-y-1  transition-all duration-150 ease-in-out"
+          className="text-secondary-cream py-2 p-5 rounded-full bg-primary-sky hover:bg-blue-500 w-5/6 text-2xl md:text-5xl font-bold border-2  shadow-md hover:shadow-lg active:shadow-sm active:translate-y-1  transition-all duration-150 ease-in-out"
         >
           Inscribete aquí
         </button>
