@@ -9,13 +9,13 @@ import React from "react";
 
 function VideoComponent() {
   return (
-    <section className="flex flex-col my-10 py-10">
+    <section className="flex flex-col md:my-10 md:py-10">
       <ImageBottom src={imageBottomBase.src} />
       <div className="bg-secondary-cream md:h-28 max-w-full">
         <Image src={imageBottomVideo} alt={""} className="w-full h-full" />
       </div>
 
-      <div className="text-left py-20" id="videos">
+      <div className="text-left py-10 md:py-20" id="videos">
         <h1 className="text-2xl md:text-4xl font-bold " >Videos</h1>
         <div className="w-full md:w-[130px] h-2 bg-primary-sky"></div>
       </div>

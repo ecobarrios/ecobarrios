@@ -13,6 +13,7 @@ import subrayadoRojo from "@/public/SVG/subrayado_red.svg";
 import subrayadoAmarillo from "@/public/SVG/subrayado_amarillo.svg";
 import subrayadoVerde from "@/public/SVG/subrayado_verde.svg";
 import Link from "next/link";
+import imageLogoEco from "@/public/SVG/logo_ecobarrios_svg.svg";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -117,6 +118,8 @@ function Header() {
                   {m.title}
                 </Link>
               ))}
+
+              <Image src={imageLogoEco} alt="image-drawer" className="w-80 h-screen" />
             </div>
           </SheetContent>
         </Sheet>
