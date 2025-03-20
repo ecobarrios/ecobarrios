@@ -20,13 +20,28 @@ function Header() {
   const handleClose = () => setOpen(false);
 
   return (
-    <nav className="w-full bg-secondary-cream h-24 flex items-center justify-between md:justify-center gap-10 px-6 fixed shadow-sm z-50">
-      <Link href={"#home"} className="hidden md:block">
-        <Image src={logoHeaderSvg} alt="logo" width={300} height={300} className="w-60" />
+    <nav className="w-full bg-secondary-cream h-20 flex items-center justify-between md:justify-center gap-10 px-6 fixed shadow-sm z-50">
+      <Link href={"#home"} className="w-60">
+        <Image
+          src={logoHeaderSvg}
+          alt="logo"
+          width={300}
+          height={300}
+          className="w-60"
+        />
       </Link>
-      
-      <Link href={"#home"} className="flex md:justify-center justify-start md:items-center  items-start">
-        <Image src={logoEcoSVG} alt="logo" width={300} height={300} className="w-60"/>
+
+      <Link
+        href={"#home"}
+        className="hidden md:flex md:justify-center justify-start md:items-center  items-start w-44"
+      >
+        <Image
+          src={logoEcoSVG}
+          alt="logo"
+          width={200}
+          height={200}
+          className="w-60"
+        />
       </Link>
 
       <div className="hidden md:flex gap-10 items-center">
@@ -49,6 +64,12 @@ function Header() {
             case "contact":
               subrayado = subrayadoVerde;
               break;
+            case "videos":
+              subrayado = subrayadoCeleste;
+              break;
+            case "descargables":
+              subrayado = subrayadoMora;
+              break;
             default:
               subrayado = subrayadoCeleste;
               break;
@@ -56,13 +77,19 @@ function Header() {
           return (
             <Link
               href={`#${m.url}`}
-              key={m.key}
-              className="flex flex-col items-center gap-2"
+              key={m.id}
+              className="flex flex-col items-center gap-1"
             >
-              <span className="cursor-pointer text-primary-green font-bold hover:text-secondary-green active:translate-y-1 transition-all duration-150 ease-in-out">
+              <span className="text-[15px] cursor-pointer text-slate-500 hover:text-primary-green active:translate-y-1 transition-all duration-150 ease-in-out">
                 {m.title}
               </span>
-              <Image src={subrayado} alt="sub" width={1000} height={1000} className="w-20" />
+              <Image
+                src={subrayado}
+                alt="sub"
+                width={1000}
+                height={1000}
+                className="w-20"
+              />
             </Link>
           );
         })}
@@ -71,13 +98,12 @@ function Header() {
       <div className="md:hidden flex items-center">
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild className="flex justify-end">
-              <Menu className=" text-primary-green"  size={50}/>
+            <Menu className="" size={50} />
           </SheetTrigger>
 
           <SheetContent side="right" className="bg-secondary-cream w-3/4 p-6">
             <div className="flex justify-between items-center mb-6">
-              <span className="text-lg font-bold text-primary-green">Menú</span>
-            
+              <span className="text-lg font-bold ">Menú</span>
             </div>
 
             <div className="flex flex-col gap-4">
@@ -85,7 +111,7 @@ function Header() {
                 <Link
                   key={m.key}
                   href={`#${m.url}`}
-                  className="text-2xl font-semibold text-primary-green hover:text-secondary-green transition-all duration-150"
+                  className="text-1xl font-semibold text-slate-900/80 transition-all duration-150"
                   onClick={handleClose}
                 >
                   {m.title}

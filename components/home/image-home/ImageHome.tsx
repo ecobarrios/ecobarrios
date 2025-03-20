@@ -1,9 +1,9 @@
 import React from "react";
-import imageHomePresentation from "@/public/principal.jpg";
-import BackgroundImageComponent from "./components/BackgroundImageComponent";
+
+import SlideCarousel from "@/components/shared/SlideCarousel";
 
 function ImageHome() {
-  return <BackgroundImageComponent imageUrl={imageHomePresentation.src} />;
+  return <SlideCarousel />;
 }
 
 export default ImageHome;
