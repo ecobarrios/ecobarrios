@@ -14,7 +14,7 @@ function ButtonInscription() {
           onClick={() => setFormInscription(true)}
           className="text-secondary-cream py-2 p-5 rounded-full bg-primary-sky hover:bg-blue-500 w-5/6 text-1xl md:text-5xl font-bold   shadow-md hover:shadow-lg active:shadow-sm active:translate-y-1  transition-all duration-150 ease-in-out"
         >
-          Inscribete aquí
+          Inscríbete aquí
         </button>
 
        

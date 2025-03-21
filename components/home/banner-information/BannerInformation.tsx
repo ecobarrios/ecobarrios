@@ -15,9 +15,9 @@ function BannerInformation() {
         </div>
         <div className=" mt-5 md:py-5">
           <p className="text-secondary-brown text-[15px] md:text-2xl text-justify md:mx-20">
-            Un <span className="font-bold">Ecobarrio</span> es una comunidad organizada que trabaja por un entorno mas sustentable
+            Un <span className="font-bold">Ecobarrio</span> es una comunidad organizada que trabaja por un entorno más sustentable
             mejorando la calidad de vida y <span className="font-bold">protegiendo la naturaleza local</span>. A través de soluciones ecológicas y sociales, 
-            impulsan cambios positivos y duraderos en su barrio, siempre con un compromiso ambiental.
+            impulsa cambios positivos y duraderos en su barrio, siempre con un compromiso ambiental.
           </p>
         </div>
       </div>
