@@ -4,9 +4,10 @@ import new3 from "@/public/SVG/miniatura_new-03.svg"
 
 export const news = [
   {
-    id: 1,
+    
     textPrev: "En un esfuerzo sin precedentes por fortalecer la participación ciudadana y la gestión comunitaria en torno a la sustentabilidad, el Gobierno de Santiago ha lanzado una innovadora iniciativa que busca consolidar y potenciar los ecobarrios en la Región Metropolitana. Este programa, pionero en Chile, tiene como objetivo fortalecer la capacidad de gestión de las organizaciones ambientales que lideran estos espacios, promoviendo un trabajo articulado con el sector público para el mejoramiento de barrios y el fortalecimiento del tejido social basado en la colaboración...",
-    src: new1.src,
+    srcImages: [new1.src],
+    urlVideos: [""],
     noticeText: "",
     title: "Gobierno de Santiago impulsa la primera Red de Ecobarrios de la Región Metropolitana",
     href: "#",

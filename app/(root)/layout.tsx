@@ -1,5 +1,6 @@
 import Header from "@/components/nav/Header";
 
+
 export default function HomeLayout({
   children,
 }: {
@@ -9,7 +10,10 @@ export default function HomeLayout({
     <div className="bg-secondary-cream">
       <Header />
 
-      <main className="min-h-screen ">{children}</main>
+      <main className="min-h-screen ">
+        {children}
+        
+      </main>
     </div>
   );
 }
