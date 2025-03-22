@@ -1,6 +1,6 @@
-// app/noticias-entradas/[page]/page.tsx
 
 
+export const dynamic = 'force-dynamic';
 import NewsList from "@/components/home/news/NewsList";
 import OneProjectOf from "@/components/shared/OneProjectOf";
 import PaginationButtons from "@/components/shared/PaginationButtons";
