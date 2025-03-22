@@ -1,5 +1,5 @@
-// lib/news.ts
-import prisma  from "@/lib/prismadb";
+
+import prisma from "@/lib/prismadb";
 import { PaginatedNewsResponse } from "@/interfaces/newsItemResponse.interface";
 
 export async function getPaginatedNews(

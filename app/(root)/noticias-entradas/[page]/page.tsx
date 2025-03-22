@@ -1,9 +1,10 @@
 // app/noticias-entradas/[page]/page.tsx
 
-import { getPaginatedNewsAction } from "@/actions/getPaginated.news.action";
+
 import NewsList from "@/components/home/news/NewsList";
 import OneProjectOf from "@/components/shared/OneProjectOf";
 import PaginationButtons from "@/components/shared/PaginationButtons";
+import { getPaginatedNews } from "@/lib/getPaginatedNew";
 
 interface PageProps {
   params: { page: string };
@@ -14,7 +15,7 @@ async function NewsEntryPage({ params }: PageProps) {
     params.page = "1";
   }
   const pageNumber = parseInt(params.page, 10);
-  const news = await getPaginatedNewsAction(pageNumber);
+  const news = await getPaginatedNews(pageNumber);
 
   return (
     <div className="max-w-[1000px] flex flex-col justify-center items-center m-auto py-32">

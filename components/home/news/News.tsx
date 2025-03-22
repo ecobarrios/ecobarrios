@@ -1,12 +1,12 @@
-import { getPaginatedNewsAction } from "@/actions/getPaginated.news.action";
 import New from "@/components/shared/New";
+import { getPaginatedNews } from "@/lib/getPaginatedNew";
 import { NewsItem } from "@prisma/client";
 import { ChevronLeft } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
 async function News() {
-  const news = await getPaginatedNewsAction(1);
+  const news = await getPaginatedNews(1);
 
   return (
     <section id="noticias" className="md:py-20">

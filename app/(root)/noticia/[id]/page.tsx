@@ -1,8 +1,8 @@
-import { getNewsById } from "@/actions/getNewById.action";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import OneProjectOf from "@/components/shared/OneProjectOf";
+import { getNewsById } from "@/lib/news";
 
 interface PageProps {
   params: {
