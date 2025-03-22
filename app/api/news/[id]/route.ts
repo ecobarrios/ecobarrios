@@ -5,16 +5,26 @@ export async function GET(
   request: NextRequest,
   context: { params: { id: string } }
 ) {
-  const { id } = context.params;
+  try {
+    const { id } = context.params;
 
-  const news = await prisma.newsItem.findUnique({ where: { id } });
+    const newsItem = await prisma.newsItem.findUnique({ 
+      where: { id: id } 
+    });
 
-  if (!news) {
+    if (!newsItem) {
+      return NextResponse.json(
+        { error: "Noticia no encontrada" },
+        { status: 404 }
+      );
+    }
+
+    return NextResponse.json(newsItem);
+  } catch (error) {
+    console.error("Error fetching news item:", error);
     return NextResponse.json(
-      { error: "Noticia no encontrada" },
-      { status: 404 }
+      { error: "Error al buscar la noticia" },
+      { status: 500 }
     );
   }
-
-  return NextResponse.json(news);
 }
