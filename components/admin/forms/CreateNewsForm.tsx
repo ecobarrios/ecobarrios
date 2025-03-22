@@ -21,7 +21,7 @@ import { Button } from "@/components/ui/button";
 import { CldUploadButton } from "next-cloudinary";
 import { NewsItemInterface } from "@/interfaces/news.interface";
 import { newsSchema } from "@/schemas/news.schema";
-import { createNewsAction } from "@/actions/create.news.action";
+import { createNews } from "@/lib/createNews";
 
 const CreateNewsForm = () => {
   const { toast } = useToast();
@@ -41,7 +41,7 @@ const CreateNewsForm = () => {
   });
 
   async function onSubmit(values: z.infer<typeof newsSchema>) {
-    const response = await createNewsAction(values);
+    const response = await createNews(values);
 
     if (!response.success) {
       toast({
