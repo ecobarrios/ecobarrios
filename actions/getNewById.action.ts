@@ -1,4 +1,4 @@
-"use server"
+
 
 import { NewsItem } from "@prisma/client";
 
