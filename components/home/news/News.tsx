@@ -15,7 +15,7 @@ async function News() {
         <div className="w-full md:w-[145px] h-2 bg-primary-yellow"></div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {news && news.news?.slice(0, 4).map((n: NewsItem) => <New news={n} />)}
+        {news && news.news?.slice(0, 4).map((n: NewsItem) => <New key={n.id} news={n} />)}
       </div>
       <div className="mt-10 w-64">
         <Link
