@@ -13,7 +13,7 @@ interface PageProps {
 async function NewPage({ params }: PageProps) {
   const news = await getNewsById(params.id);
 
-  console.log("news", news);
+//   console.log("news", news);
 
   if (!news) {
     return <div>No se encontró la noticia</div>;

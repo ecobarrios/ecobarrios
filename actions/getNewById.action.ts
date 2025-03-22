@@ -1,3 +1,5 @@
+"use server"
+
 import { NewsItem } from "@prisma/client";
 
 export async function getNewsById(id: string) {
