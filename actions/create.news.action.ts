@@ -1,15 +1,11 @@
 import { NewsItemInterface } from "@/interfaces/news.interface";
 
-export async function createNews(news: NewsItemInterface) {
-  console.log("news ->", news);
-
-  console.log("window.location.origin", window.location.origin);
-
+export async function createNewsAction(news: NewsItemInterface) {
   try {
     const response = await fetch("/api/news/post", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(news), 
+      body: JSON.stringify(news),
     });
 
     const data = await response.json();

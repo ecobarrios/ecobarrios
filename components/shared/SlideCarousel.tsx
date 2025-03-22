@@ -10,9 +10,9 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { useRef } from "react";
-import slider1 from "@/public/PNG/slider_1.png";
-import slider2 from "@/public/PNG/slider_2.png";
-import slider3 from "@/public/PNG/slider_3.png";
+import slider1 from "@/public/SVG/slider_1.svg";
+import slider2 from "@/public/SVG/slider_2.svg";
+import slider3 from "@/public/SVG/slider_3.svg";
 import imgBaseSlider from "@/public/SVG/image_base_button_inscription.svg"
 import Image from "next/image";
 function SlideCarousel() {

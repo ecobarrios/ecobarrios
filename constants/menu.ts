@@ -1,7 +1,7 @@
 export const menuHeader = [
   {
     id:1,
-    title: "Inscribete Aquí",
+    title: "Inscríbete Aquí",
     key: "inscription",
     url: "inscripcion",
   },

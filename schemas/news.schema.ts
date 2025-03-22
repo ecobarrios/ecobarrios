@@ -5,6 +5,7 @@ export const newsSchema = z.object({
     textPrev: z.string().min(10, "Resumen demasiado corto"),
     srcImages: z.array(z.string().url()).optional(),
     urlVideos: z.array(z.string().url()).optional(),
+    littleImage: z.string().url().optional(),
     noticeTextP1: z.string().min(10, "Primer párrafo requerido"),
     noticeTextP2: z.string().optional(),
     noticeTextP3: z.string().optional(),

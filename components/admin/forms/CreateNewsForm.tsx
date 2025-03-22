@@ -21,7 +21,7 @@ import { Button } from "@/components/ui/button";
 import { CldUploadButton } from "next-cloudinary";
 import { NewsItemInterface } from "@/interfaces/news.interface";
 import { newsSchema } from "@/schemas/news.schema";
-import { createNews } from "@/actions/create.news.action";
+import { createNewsAction } from "@/actions/create.news.action";
 
 const CreateNewsForm = () => {
   const { toast } = useToast();
@@ -31,7 +31,8 @@ const CreateNewsForm = () => {
       title: "",
       textPrev: "",
       srcImages: [],
-      urlVideos: [""],
+      littleImage: "",
+      urlVideos: [],
       noticeTextP1: "",
       noticeTextP2: "",
       noticeTextP3: "",
@@ -40,8 +41,23 @@ const CreateNewsForm = () => {
   });
 
   async function onSubmit(values: z.infer<typeof newsSchema>) {
-    const response = await createNews(values);
-    console.log("response", response);
+    const response = await createNewsAction(values);
+
+    if (!response.success) {
+      toast({
+        title: "!UPS¡",
+        description: "Hubo un error vuelve a intentarlo",
+        className: "bg-red-500 text-white",
+      });
+      form.reset();
+    } else {
+      toast({
+        title: "!UP¡",
+        description: "!Noticia creada con éxito¡",
+        className: "bg-green-500 text-white",
+      });
+      form.reset();
+    }
   }
 
   const handleCloudinaryUpload = (result: any) => {
@@ -54,6 +70,21 @@ const CreateNewsForm = () => {
       className: "bg-green-400",
     });
   };
+
+  const handleLittleImageUlpload = (result: any) => {
+    const url = result.info.secure_url;
+    form.setValue("littleImage", url);
+    toast({
+      title: "UP¡",
+      description: "Imagen miniatura subida con éxito",
+      className: "bg-green-400",
+    });
+  };
+
+  const requiredFieldsFilled =
+    !!form.watch("title") &&
+    !!form.watch("textPrev") &&
+    !!form.watch("noticeTextP1");
 
   return (
     <>
@@ -129,15 +160,6 @@ const CreateNewsForm = () => {
             )}
           />
 
-          <FormItem className="flex flex-col">
-            <FormLabel>Subir Imágenes</FormLabel>
-            <CldUploadButton
-              uploadPreset="ecobarrio"
-              onSuccess={handleCloudinaryUpload}
-              className="bg-green-400 hover:bg-green-600 py-2 px-3 rounded-xl text-white font-bold"
-            />
-          </FormItem>
-
           <FormField
             control={form.control}
             name="srcImages"
@@ -176,6 +198,32 @@ const CreateNewsForm = () => {
               </FormItem>
             )}
           />
+
+          {requiredFieldsFilled && (
+            <>
+              <FormItem className="flex flex-col">
+                <FormLabel>Subir Imágenes</FormLabel>
+                <CldUploadButton
+                  uploadPreset="ecobarrio"
+                  onSuccess={handleCloudinaryUpload}
+                  className="bg-green-400 hover:bg-green-600 py-2 px-3 rounded-xl text-white font-bold"
+                />
+              </FormItem>
+
+              <FormItem className="flex flex-col">
+                <FormLabel>Subir imagen miniatura</FormLabel>
+                <CldUploadButton
+                  uploadPreset="ecobarrio"
+                  onSuccess={handleLittleImageUlpload}
+                  className="bg-green-400 hover:bg-green-600 py-2 px-3 rounded-xl text-white font-bold"
+                  options={{
+                    multiple: false,
+                    maxFiles: 1,
+                  }}
+                />
+              </FormItem>
+            </>
+          )}
 
           <Button type="submit">Crear noticia</Button>
         </form>

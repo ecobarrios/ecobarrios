@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/lib/prismadb";
 import { NewsItem } from "@prisma/client";
+import { revalidateTag } from "next/cache";
 
 export async function POST(req: NextRequest) {
   try {
@@ -21,6 +22,8 @@ export async function POST(req: NextRequest) {
     const newNewsItem = await prisma.newsItem.create({
       data,
     });
+
+    revalidateTag("news");
 
     return NextResponse.json(
       { success: true, news: newNewsItem },

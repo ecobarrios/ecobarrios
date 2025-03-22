@@ -1,4 +1,3 @@
-import Footer from "@/components/footer/Footer";
 import BannerActionDos from "@/components/home/banner-action-dos/BannerActionDos";
 import BannerAction from "@/components/home/banner-action/BannerAction";
 import BannerInformation from "@/components/home/banner-information/BannerInformation";
@@ -7,7 +6,6 @@ import ImageHome from "@/components/home/image-home/ImageHome";
 import News from "@/components/home/news/News";
 import VideoComponent from "@/components/home/video/VideoComponent";
 import React from "react";
-
 
 function HomePage() {
   return (
@@ -22,7 +20,6 @@ function HomePage() {
         <VideoComponent />
         <BannerActionDos />
       </div>
-      <Footer />
     </div>
   );
 }

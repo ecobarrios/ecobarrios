@@ -21,8 +21,6 @@ export async function DELETE(req: NextRequest) {
 
     const result = await cloudinary.uploader.destroy(publicId);
 
-    console.log("result", result);
-
     if (result.result !== "ok") {
       return NextResponse.json(
         { success: false, error: "Error al eliminar imagen" },
