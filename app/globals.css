@@ -89,4 +89,7 @@ html {
   body {
     @apply bg-background text-foreground;
   }
+
+  
 }
+

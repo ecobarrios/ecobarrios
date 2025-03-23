@@ -15,11 +15,13 @@ import subrayadoVerde from "@/public/SVG/subrayado_verde.svg";
 import Link from "next/link";
 import imageLogoEco from "@/public/SVG/logo_ecobarrios_svg.svg";
 import { usePathname } from "next/navigation";
+import PasskeyModal from "../shared/PasskeyModal";
 
 function Header() {
   const [open, setOpen] = useState(false);
   const handleClose = () => setOpen(false);
   const pathname = usePathname();
+ 
 
   return (
     <nav className="w-full bg-secondary-cream h-20 flex items-center justify-between md:justify-center gap-10 px-6 fixed shadow-sm z-50">
@@ -107,6 +109,8 @@ function Header() {
             </div>
           </Link>
         )}
+
+     
       </div>
 
       <div className="md:hidden flex items-center">
