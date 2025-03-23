@@ -47,6 +47,7 @@ function Footer() {
                 {c.title}
               </Link>
             ))}
+      
              {isAdmin && <PasskeyModal />}
             <Link href="?admin=true" className="text-slate-200 hover:text-slate-400 mt-10">
               Admin
