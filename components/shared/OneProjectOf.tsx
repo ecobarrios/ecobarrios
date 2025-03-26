@@ -14,14 +14,6 @@ function OneProjectOf() {
         className="w-48 mt-3"
         alt="logo-gob"
       />
-
-      <Image
-        src={decoMolde}
-        width={1000}
-        height={1000}
-        className="w-full mt-10"
-        alt="logo-gob"
-      />
     </div>
   );
 }
