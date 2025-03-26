@@ -14,7 +14,7 @@ function HomePage() {
     <div className="min-h-screen" >
       <ImageHome />
 
-      <div className="px-8 md:px-0 md:max-w-[1200px] m-auto flex flex-col space-y-5" >
+      <div className="px-8 md:px-0 max-w-[1000px] m-auto flex flex-col space-y-5" >
         <BannerInformation />
         <BannerAction />
         <News />

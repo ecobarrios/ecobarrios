@@ -36,7 +36,7 @@ function SlideCarousel() {
             <CarouselItem key={i.id}>
               <Card className="rounded-none shadow-none w-full bg-transparent">
                 <div
-                  className="flex md:h-[60vh] h-[300px]  md:bg-cover bg-center bg-contain bg-no-repeat items-center justify-center p-6"
+                  className="flex md:min-h-[60vh] md:max-h-[60vh] h-[300px]  md:bg-cover bg-center bg-contain bg-no-repeat items-center justify-center p-6"
                   style={{ backgroundImage: `url(${i.src.src})` }}
                 />
               </Card>

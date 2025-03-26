@@ -9,7 +9,7 @@ function BannerAction() {
     <>
       <div className="bg-primary-green h-32 md:h-60 flex items-center rounded-xl">
         <div className="flex flex-col justify-center items-center m-auto md:w-full gap-2">
-          <h1 className="font-extralight text-1xl md:text-7xl text-secondary-cream">
+          <h1 className="font-extralight text-1xl md:text-5xl text-secondary-cream">
             Convierte tu barrio en{" "}
             <span className="font-extrabold">Ecobarrio</span>
           </h1> 

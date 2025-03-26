@@ -14,12 +14,10 @@ import subrayadoAmarillo from "@/public/SVG/subrayado_amarillo.svg";
 import subrayadoVerde from "@/public/SVG/subrayado_verde.svg";
 import Link from "next/link";
 import imageLogoEco from "@/public/SVG/logo_ecobarrios_svg.svg";
-import { usePathname } from "next/navigation";
 
 function Header() {
   const [open, setOpen] = useState(false);
   const handleClose = () => setOpen(false);
-  const pathname = usePathname();
 
   return (
     <nav className="w-full bg-secondary-cream h-20 flex items-center justify-between md:justify-center gap-10 px-6 fixed shadow-sm z-50">
@@ -109,28 +107,16 @@ function Header() {
             </div>
 
             <div className="flex flex-col gap-4">
-              {pathname == "/" &&
-                menuHeader.map((m) => (
-                  <Link
-                    key={m.key}
-                    href={`#${m.url}`}
-                    className="text-1xl font-semibold text-slate-900/80 transition-all duration-150"
-                    onClick={handleClose}
-                  >
-                    {m.title}
-                  </Link>
-                ))}
-
-              {pathname != "/" && (
-                <Link href={`/`} className="flex flex-col items-start gap-1">
-                  <div className="flex itemes-start">
-                    <ChevronLeft className="w-10" />
-                    <span className="text-[15px] cursor-pointer text-slate-500 hover:text-primary-green active:translate-y-1 transition-all duration-150 ease-in-out">
-                      Volver a Home
-                    </span>
-                  </div>
+              {menuHeader.map((m) => (
+                <Link
+                  key={m.key}
+                  href={`/#${m.url}`}
+                  className="text-1xl font-semibold text-slate-900/80 transition-all duration-150"
+                  onClick={handleClose}
+                >
+                  {m.title}
                 </Link>
-              )}
+              ))}
 
               <Link href="/" onClick={() => setOpen(false)}>
                 <Image
