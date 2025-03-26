@@ -16,7 +16,7 @@ function VideoComponent() {
       </div>
 
       <div className="text-left py-10 md:py-20" id="galeria">
-        <h1 className="text-2xl md:text-4xl font-bold " >Galería</h1>
+        <h1 className="text-2xl md:text-4xl font-bold text-gray-600  " >Galería</h1>
         <div className="w-full md:w-[130px] h-2 bg-primary-green"></div>
       </div>
       <div className="grid grid-cols-1 m-auto md:grid-cols-3 md:gap-20 gap-5">

@@ -19,7 +19,7 @@ async function NewsEntryPage({ params }: PageProps) {
 
   return (
     <div className="max-w-[1000px] flex flex-col justify-center items-center m-auto py-32">
-      <h1 className="text-2xl md:text-4xl font-bold ">Noticias</h1>
+      <h1 className="text-2xl text-gray-600 md:text-4xl font-bold ">Noticias</h1>
       <div className="w-full md:w-[145px] h-1 md:h-2 bg-primary-yellow"></div>
       <NewsList items={news.news!} />
       {news.news?.length! > 0 && <PaginationButtons currentPage={pageNumber} />}

@@ -11,7 +11,7 @@ async function News() {
   return (
     <section id="noticias" className="md:py-20">
       <div className="text-left py-8 md:my-10 md:py-0">
-        <h1 className="text-2xl md:text-4xl font-bold ">Noticias</h1>
+        <h1 className="text-2xl text-gray-600  md:text-4xl font-bold ">Noticias</h1>
         <div className="w-full md:w-[145px] h-2 bg-primary-yellow"></div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
