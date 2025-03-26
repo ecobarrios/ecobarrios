@@ -25,7 +25,7 @@ function SlideCarousel() {
   ];
 
   return (
-    <div className="relative w-full pt-10">
+    <div className="relative w-full pt-28">
       <Carousel
         plugins={[plugin.current]}
         className="w-full "
