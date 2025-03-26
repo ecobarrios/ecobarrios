@@ -4,11 +4,11 @@ import React from "react";
 
 function BannerInformation() {
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col ">
 
-    <div className="flex justify-center items-center md:w-full m-auto mb-5 md:mb-0">
+    <div className="flex justify-center items-center md:w-full m-auto mb-5 md:mb-0 md:pt-10"  id="que-es-ecobarrios" >
       <div className=" h-auto w-full justify-center flex items-center flex-col md:mt-10">
-        <div className="bg-secondary-brown w-full h-auto text-center py-5 rounded-xl">
+        <div className="bg-secondary-brown w-full h-auto text-center py-5 rounded-xl" >
           <h1 className="font-extralight text-1xl md:text-7xl text-secondary-cream">
             ¿Qué entedemos por Ecobarrio?
           </h1>

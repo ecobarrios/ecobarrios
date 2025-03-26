@@ -1,23 +1,42 @@
 export const menuHeader = [
+
+//   1- que es ecobarrios
+// 2-  red
+// 3-  noticias
+// 4-Actividades
+// 5- galeria
+// 6- Recursos
+  // {
+  //   id:1,
+  //   title: "Inscríbete Aquí",
+  //   key: "inscription",
+  //   url: "inscripcion",
+  // },
   {
     id:1,
-    title: "Inscríbete Aquí",
-    key: "inscription",
-    url: "inscripcion",
+    title: "¿Qué es Ecobarrios?",
+    key: "que-es-ecobarrios",
+    url: "que-es-ecobarrios",
   },
   {
     id:2,
+    title: "Red",
+    key: "red",
+    url: "red"
+  },
+  {
+    id:3,
     title: "Noticias",
     key: "news",
     url: "noticias",
   },
  
-  // {
-  //   id:3
-  //   title: "Actividades",
-  //   key: "activities",
-  //   url: "inscripcion",
-  // },
+  {
+    id:4,
+    title: "Actividades",
+    key: "activities",
+    url: "actividades",
+  },
   // {
   //   id:4
   //   title: "Red",
@@ -26,20 +45,15 @@ export const menuHeader = [
   // },
   {
     id: 5,
-    title: "Contacto",
-    key: "contact",
-    url: "footer",
+    title: "Galería",
+    key: "galeria",
+    url: "galeria",
   },
+
   {
     id:6,
-    title: "Videos",
-    key: "videos",
-    url: "videos",
-  },
-  {
-    id:7,
-    title: "Descargables",
-    key: "descargables",
-    url: "descargables",
+    title: "Recursos",
+    key: "recursos",
+    url: "recursos",
   },
 ];

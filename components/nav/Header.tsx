@@ -15,13 +15,11 @@ import subrayadoVerde from "@/public/SVG/subrayado_verde.svg";
 import Link from "next/link";
 import imageLogoEco from "@/public/SVG/logo_ecobarrios_svg.svg";
 import { usePathname } from "next/navigation";
-import PasskeyModal from "../shared/PasskeyModal";
 
 function Header() {
   const [open, setOpen] = useState(false);
   const handleClose = () => setOpen(false);
   const pathname = usePathname();
- 
 
   return (
     <nav className="w-full bg-secondary-cream h-20 flex items-center justify-between md:justify-center gap-10 px-6 fixed shadow-sm z-50">
@@ -48,69 +46,55 @@ function Header() {
         />
       </Link>
 
-      <div className="hidden md:flex gap-10 items-center">
-        {pathname == "/" &&
-          menuHeader.map((m) => {
-            let subrayado;
+      <div className="hidden md:flex gap-3 items-center">
+        {menuHeader.map((m) => {
+          let subrayado;
 
-            switch (m.key) {
-              case "inscription":
-                subrayado = subrayadoRojo;
-                break;
-              case "news":
-                subrayado = subrayadoAmarillo;
-                break;
-              case "activities":
-                subrayado = subrayadoMora;
-                break;
-              case "red":
-                subrayado = subrayadoCeleste;
-                break;
-              case "contact":
-                subrayado = subrayadoVerde;
-                break;
-              case "videos":
-                subrayado = subrayadoCeleste;
-                break;
-              case "descargables":
-                subrayado = subrayadoMora;
-                break;
-              default:
-                subrayado = subrayadoCeleste;
-                break;
-            }
-            return (
-              <Link
-                href={`#${m.url}`}
-                key={m.id}
-                className="flex flex-col items-center gap-1"
-              >
-                <span className="text-[15px] cursor-pointer text-slate-500 hover:text-primary-green active:translate-y-1 transition-all duration-150 ease-in-out">
-                  {m.title}
-                </span>
-                <Image
-                  src={subrayado}
-                  alt="sub"
-                  width={1000}
-                  height={1000}
-                  className="w-20"
-                />
-              </Link>
-            );
-          })}
-
-        {pathname != "/" && (
-          <Link href={`/`} className="flex flex-col items-center gap-1">
-            <div className="flex itemes-center">
-              <ChevronLeft className="w-10" />
+          switch (m.key) {
+            case "que-es-ecobarrios":
+              subrayado = subrayadoRojo;
+              break;
+            case "news":
+              subrayado = subrayadoAmarillo;
+              break;
+            case "activities":
+              subrayado = subrayadoMora;
+              break;
+            case "red":
+              subrayado = subrayadoCeleste;
+              break;
+            case "galeria":
+              subrayado = subrayadoVerde;
+              break;
+            case "recursos":
+              subrayado = subrayadoCeleste;
+              break;
+            case "descargables":
+              subrayado = subrayadoMora;
+              break;
+            default:
+              subrayado = subrayadoCeleste;
+              break;
+          }
+          return (
+            <Link
+              href={`/#${m.url}`}
+              key={m.id}
+              className="flex flex-col items-center gap-1"
+            >
               <span className="text-[15px] cursor-pointer text-slate-500 hover:text-primary-green active:translate-y-1 transition-all duration-150 ease-in-out">
-                Volver a Home
+                {m.title}
               </span>
-            </div>
-          </Link>
-        )}
-
-     
+              <Image
+                src={subrayado}
+                alt="sub"
+                width={1000}
+                height={1000}
+                className="w-20"
+              />
+            </Link>
+          );
+        })}
       </div>
 
       <div className="md:hidden flex items-center">

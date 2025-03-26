@@ -48,10 +48,10 @@ function Footer() {
               </Link>
             ))}
       
-             {isAdmin && <PasskeyModal />}
+             {/* {isAdmin && <PasskeyModal />}
             <Link href="?admin=true" className="text-slate-200 hover:text-slate-400 mt-10">
               Admin
-            </Link>
+            </Link> */}
           </div>
           <div className="flex flex-col justify-center items-center w-full h-full">
             <h1 className="text-secondary-cream mb-5 text-1xl md:text-2xl font-bold">
@@ -73,7 +73,7 @@ function Footer() {
               Redes Sociales
             </h1>
 
-            <div className="grid grid-cols-3 gap-5 ">
+            <div className="grid grid-cols-4 gap-3 ">
               {rrss.map((m) => (
                 <Rrss
                   key={m.id}

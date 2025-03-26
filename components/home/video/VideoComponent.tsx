@@ -15,9 +15,9 @@ function VideoComponent() {
         <Image src={imageBottomVideo} alt={""} className="w-full h-full" />
       </div>
 
-      <div className="text-left py-10 md:py-20" id="videos">
-        <h1 className="text-2xl md:text-4xl font-bold " >Videos</h1>
-        <div className="w-full md:w-[130px] h-2 bg-primary-sky"></div>
+      <div className="text-left py-10 md:py-20" id="galeria">
+        <h1 className="text-2xl md:text-4xl font-bold " >Galería</h1>
+        <div className="w-full md:w-[130px] h-2 bg-primary-green"></div>
       </div>
       <div className="grid grid-cols-1 m-auto md:grid-cols-3 md:gap-20 gap-5">
         {videos.map((v) => (

@@ -24,7 +24,7 @@ async function NewPage({ params }: PageProps) {
 
   return (
     <div className="md:w-[1200px] px-10 md:px-0 flex flex-col justify-center m-auto py-40">
-      <h1 className="md:text-7xl text-1xl font-bold mb-2 md:mb-4">{news.title}</h1>
+      <h1 className="md:text-7xl text-1xl  mb-2 md:mb-4 text-gray-600">{news.title}</h1>
       <div className="w-full md:w-full h-1 md:h-2 bg-primary-yellow my-2 md:my-5"></div>
       <Image
         src={news.srcImages[0]}
@@ -35,38 +35,31 @@ async function NewPage({ params }: PageProps) {
       />
 
       {news.noticeTextP1 != "" && (
-        <p className="mt-5 md:text-[20px] text-justify">{news.noticeTextP1}</p>
+        <p className="mt-5 md:text-[20px] text-justify text-gray-600">{news.noticeTextP1}</p>
       )}
 
       {news.srcImages.length > 2 && (
         <img
           src={news.srcImages[1]}
-          alt="asdasd"
+          alt="imagen"
           className="w-full h-60 rounded-xl"
         />
       )}
       {news.noticeTextP2 != "" && (
-        <p className="mt-5 md:text-[20px] text-justify">{news.noticeTextP2}</p>
+        <p className="mt-5 md:text-[20px] text-justify text-gray-600">{news.noticeTextP2}</p>
       )}
 
       {news.srcImages.length > 2 && (
         <img
           src={news.srcImages[2]}
-          alt="asdasd"
+          alt="img"
           className="w-full h-60 rounded-xl"
         />
       )}
       {news.noticeTextP3 != "" && (
-        <p className="mt-5 md:text-[20px] text-justify">
+        <p className="mt-5 md:text-[20px] text-justify text-gray-600">
           {news.noticeTextP3}{" "}
-          {news.href && news.href != "" && (
-            <Link
-              href={news.href}
-              className="text-blue-600 font-bold hover:text-blue-800"
-            >
-              Aquí
-            </Link>
-          )}
+         
         </p>
       )}
 
