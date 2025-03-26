@@ -24,11 +24,11 @@ function New(props: Props) {
       <div className="w-full md:w-2/3 flex flex-col span-y-2">
         <Link
           href={`/noticia/${news.id}`}
-          className="text-gray-500 font-bold md:text-2xl hover:text-gray-500 cursor-pointer"
+          className="text-gray-700 md:text-[21px] hover:text-gray-500 cursor-pointer"
         >
           {news.title}
         </Link>
-        <p className="text-[18px] text-gray-500">`{news.textPrev}[...]`</p>
+        <p className="text-[17px] text-gray-500">`{news.textPrev}[...]`</p>
 
         <Link
           href={`/noticia/${news.id}`}

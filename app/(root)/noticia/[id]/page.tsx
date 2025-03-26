@@ -23,8 +23,8 @@ async function NewPage({ params }: PageProps) {
   }
 
   return (
-    <div className="md:w-[1200px] px-10 md:px-0 flex flex-col justify-center m-auto py-40">
-      <h1 className="md:text-7xl text-1xl  mb-2 md:mb-4 text-gray-600">{news.title}</h1>
+    <div className="md:max-w-[1000px] px-10 md:px-0 flex flex-col justify-center m-auto py-40">
+      <h1 className="md:text-5xl text-1xl  mb-2 md:mb-4 text-gray-600">{news.title}</h1>
       <div className="w-full md:w-full h-1 md:h-2 bg-primary-yellow my-2 md:my-5"></div>
       <Image
         src={news.srcImages[0]}

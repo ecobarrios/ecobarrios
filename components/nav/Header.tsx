@@ -80,7 +80,7 @@ function Header() {
               key={m.id}
               className="flex flex-col items-center gap-1"
             >
-              <span className="text-[15px] cursor-pointer text-slate-500 hover:text-primary-green active:translate-y-1 transition-all duration-150 ease-in-out">
+              <span className="text-[14px] cursor-pointer text-slate-500 hover:text-primary-green active:translate-y-1 transition-all duration-150 ease-in-out">
                 {m.title}
               </span>
               <Image
