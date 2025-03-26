@@ -18,7 +18,7 @@ export const activities: Activity[] = [
     {
       id: 2,
       icon: iconAct2,
-      date: '20 Abril',
+      date: '26 Abril',
       actionText: 'Visita a Experiencia Urbana Ambiental',
       colorBgPrimary: '#5597cf',
       colorBgSecondary: '#5597cf',
@@ -26,7 +26,7 @@ export const activities: Activity[] = [
     {
       id: 3,
       icon: iconAct3,
-      date: '5 Mayo',
+      date: '17 y 18 de Mayo',
       actionText: 'Segundo Encuentro Regional de Organizaciones Ambientales',
       colorBgPrimary: '#7a4520',
       colorBgSecondary: '#7a4520',
@@ -34,7 +34,7 @@ export const activities: Activity[] = [
     {
       id: 4,
       icon: iconAct4,
-      date: '18 Mayo',
+      date: '31 Mayo',
       actionText: 'Visita a Experiencia Rural Ambiental',
       colorBgPrimary: '#64478d',
       colorBgSecondary: '#5f4680',
@@ -42,7 +42,7 @@ export const activities: Activity[] = [
     {
       id: 5,
       icon: iconAct5,
-      date: '2 Junio',
+      date: 'Sep - Oct - Nov',
       actionText: '5 Talleres de Certificación a Organizaciones Ambientales',
       colorBgPrimary: '#ea5b26',
       colorBgSecondary: '',
@@ -50,7 +50,7 @@ export const activities: Activity[] = [
     {
       id: 6,
       icon: iconAct6,
-      date: '15 Junio',
+      date: 'Dic',
       actionText: 'Festival Ciudadano Ambiental de Santiago',
       colorBgPrimary: '#1d1d1d',
       colorBgSecondary: '',
