@@ -40,7 +40,7 @@ export default function NewsList({ items }: Props) {
               className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
-          <h3 className="text-lg font-bold leading-snug hover:text-gray-500">
+          <h3 className="text-lg font-bold leading-snug text-gray-600 hover:text-gray-500">
             {news.title}
           </h3>
         </Link>
